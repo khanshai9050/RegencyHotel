@@ -1,0 +1,352 @@
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Events Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet"/>
+ <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"/>
+     <link href="HotelStyle.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+<script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+		<style>
+
+
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+	}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+  .tz-gallery .lightbox:after{
+	  position:relative;
+  }
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+	</style>
+</head>
+<body>
+<!--div for top to up button-->
+<button onclick="topFunction()" id="myScrollToTopBtn" title="Go to top"><i class="fa-solid fa-arrows-up-to-line"></i></button>
+<!--Booking button-->
+<a href="https://www.google.com.np/travel/hotels/entity/CgoIgvOTy7HG2JBkEAE/prices?g2lb=4207876%2C4208993%2C4220293%2C4223281%2C4242898%2C4245928%2C4251619%2C4253230%2C4254308%2C4256748%2C4258168%2C4250437%2C4251518%2C4253015&hl=en&gl=np&un=1&rp=MhsKEgml8-FZgqw7QBHB4nDmV1tVQBC245qvrC04AUgC&ictx=1&tcfs=EhoaGAoKMjAxOS0wNS0yMRIKMjAxOS0wNS0yMlIA&utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAEaUwo1EjEyJTB4M2EyY2Q0Y2JhYzNkMjRkZjoweDg3ZmFhZjY2NTM1ZmM5ODU6CFZpZGFyYmhhGgASGhIUCgcI6A8QBRgFEgcI6A8QBRgGGAEyAhAAKgkKBToDTlBSGgA&sa=X&ap=MAA&ei=xRt4YtCbE6rflsYPmtS1iAo" target='_blank'>
+<div id="BOOKINGBTN">BOOK NOW</div>
+</a>
+<!--Icon button-->
+<div id="ICONBTN">
+<a href="https://www.facebook.com/hotelregencyvaranasi/" target='_blank'><i STYLE="transform: rotate(270deg);color:white;" class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+<a href="https://www.youtube.com/@HotelRegency" target='_blank'><i STYLE="transform: rotate(270deg);color:white;" class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+<a href="https://www.hotelregencyvns.com/" target='_blank'><i STYLE="transform: rotate(270deg);color:white;" class="fa-brands fa-google" aria-hidden="true"></i></a>
+<a href="mailto:gm@hotelregencyvns.com" target='_blank'><i STYLE="transform: rotate(270deg);color:white;" class="fa-solid fa-envelope"></i></a>
+<a href="tel:+91 8573000905" target='_blank'><i STYLE="transform: rotate(270deg);color:white;" class="fa-solid fa-phone" aria-hidden="true"></i></a> 
+</div>
+	
+	<!--div for upper header-->
+	<div class='container-fluid'>
+		<div class='row' style='background:#000064;height:30px;'>
+			<div class='col-sm-12'></div>
+			</div>
+		</div>
+<!--div for menubar-->
+<div class="container-fluid sticky-top" style="background-color:white;box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;">
+<div class="row">
+<div class="col-sm-1"></div>
+<div class="col-sm-11 p-0">
+	<nav class="navbar navbar-expand-lg navbar-light">
+						<div class="container-fluid">
+						 
+                         <img src="Images/logo.png"/>
+							<button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon text-light"></span>
+							</button>
+							<DIV CLASS="COL-SM-2 MenubarSpaceDiv"></DIV>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav">
+		<li class="nav-item NavbarMenu">
+		<a class="nav-link active" aria-current="page" href="index.html"
+                                       >Home&ensp;</a>
+									</li>
+									<li class="nav-item NavbarMenu">
+										<a class="nav-link active" href="About.html">About&ensp;
+										</a>
+									</li>
+									        <li class="nav-item dropdown NavbarMenu">
+          <a class="nav-link dropdown-toggle" style="Color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Rooms
+          </a>
+                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Suite.html">Suite Room</a></li>
+			<li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Executive.html">Executive Room</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Superior.html">Superior Room</a></li>
+          </ul>
+        </li> 
+							        <li class="nav-item dropdown NavbarMenu">
+          <a class="nav-link dropdown-toggle" style="Color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Regency Hall
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Peacock.html">Peacock Hall</a></li>
+			<li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Robin.html">Robin Hall</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Board.html">Board Room 15</a></li>
+          </ul>
+        </li> 
+									<li class="nav-item NavbarMenu">
+										<a class="nav-link active" href="Food.html" style="border:none;">Restaurant&ensp;</a>
+									</li>
+									<li class="nav-item NavbarMenu SelectedMenu">
+										<a class="nav-link active" href="Event.html" style="border:none;">Events&ensp;</a>
+									</li>
+									<li class="nav-item NavbarMenu">
+										<a class="nav-link active" href="Contact.html" style="border:none;">Contact</a>
+									</li>
+          </ul>
+							</div>
+						</div>
+					</nav>
+</div>
+</div>
+</div>
+
+<!--First div--->
+<div class="container-fluid AboutBackgroundImage1">
+<div class="row">
+<div class="col-sm-12 Overlay1">
+<h1>Hotel Regency Events</h1>
+<h5><a href="index.html" style="color:white;text-decoration:none;">Home</a> > Event</h5>
+</div>
+</div>
+</div>
+<!---gallery row-->
+<div class="container gallery-container">
+
+    <h1>Hotel Regency Events</h1>
+
+    <p class="page-description text-center">Some Snaps of Hotel Regency Events</p>
+    
+    <div class="tz-gallery">
+
+        <div class="row">
+
+           
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="Images/event1.png">
+                    <img src="Images/event1.png" style="height:200px;width:100%;" alt="Park">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="Images/event2.png">
+                    <img src="Images/event2.png" style="height:200px;width:100%;"  alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="Images/event3.png">
+                    <img src="Images/event3.png" style="height:200px;width:100%;"  alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="Images/event4.png">
+                    <img src="Images/event4.png" style="height:200px;width:100%;"  alt="Coast">
+                </a>
+            </div> 
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="Images/event5.png">
+                    <img src="Images/event5.png" style="height:200px;width:100%;"  alt="Rails">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="Images/event6.png">
+                    <img src="Images/event6.png" style="height:200px;width:100%;"  alt="Rails">
+                </a>
+            </div>
+			 <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="Images/event7.png">
+                    <img src="Images/event7.png" style="height:200px;width:100%;"  alt="Park">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="Images/event9.png">
+                    <img src="Images/event9.png" style="height:200px;width:100%;"  alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="Images/event8.png">
+                    <img src="Images/event8.png" style="height:200px;width:100%;"  alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="Images/event10.png">
+                    <img src="Images/event10.png" style="height:200px;width:100%;"  alt="Coast">
+                </a>
+            </div> 
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="Images/event11.png">
+                    <img src="Images/event11.png" style="height:200px;width:100%;"  alt="Rails">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="Images/event12.png">
+                    <img src="Images/event12.png" style="height:200px;width:100%;"  alt="Rails">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--div for book now-->
+<div class="container mt-5 mb-5 FooterBackgroundImage1">
+<div class="row">
+<div class="col-sm-12 FooterOverlay1">
+<h5 style="color:white;">One of the best Hotel in Varanasi</h5>
+<h1>Start Booking Regency Today</h1>
+<a style="text-decoration:none;" href="https://www.google.com.np/travel/hotels/entity/CgoIgvOTy7HG2JBkEAE/prices?g2lb=4207876%2C4208993%2C4220293%2C4223281%2C4242898%2C4245928%2C4251619%2C4253230%2C4254308%2C4256748%2C4258168%2C4250437%2C4251518%2C4253015&hl=en&gl=np&un=1&rp=MhsKEgml8-FZgqw7QBHB4nDmV1tVQBC245qvrC04AUgC&ictx=1&tcfs=EhoaGAoKMjAxOS0wNS0yMRIKMjAxOS0wNS0yMlIA&utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAEaUwo1EjEyJTB4M2EyY2Q0Y2JhYzNkMjRkZjoweDg3ZmFhZjY2NTM1ZmM5ODU6CFZpZGFyYmhhGgASGhIUCgcI6A8QBRgFEgcI6A8QBRgGGAEyAhAAKgkKBToDTlBSGgA&sa=X&ap=MAA&ei=xRt4YtCbE6rflsYPmtS1iAo" target='_blank'>
+<div class="btn btn mt-3 BookRedBtn">BOOK NOW</div>
+</a></div>
+</div>
+</div>
+<!--div for footer-->
+<div class="container-fluid" style="background-color:black;color:white;">
+<!---div for first row of footer-->
+<div class="row">
+<div class="col-sm-4">
+<div class="row">
+<div class="col-sm-1"></div>
+<div class="col-sm-11">
+<IMG class="mt-5 mb-2" SRC="Images/logo.png"/>
+<h6>Book our Banquets for all types of Functions like Birthday, Marriage, Anniversary, Party, Events, Meetings all type of programs.
+We offers 2 types of halls, Small Hall for 150 people & Second Hall for 1000+ people.</h6>
+</div>
+</div>
+</div>
+<div class="col-sm-2 mt-5">
+<h4 class="ms-3 mb-4">Navigation</h4>
+<ul style="list-style-type:disc;">
+<a href="index.html" style="text-decoration:none;color:grey;"><li>Home</li></a>
+<a href="About.html" style="text-decoration:none;color:grey;"><li>About</li></a>
+<a href="Suite.html" style="text-decoration:none;color:grey;"><li>Rooms</li></a>
+<a href="Food.html" style="text-decoration:none;color:grey;"><li>Restaurant</li></a>
+<a href="Event.html" style="text-decoration:none;color:grey;"><li>Events</li></a>
+<a href="Contact.html" style="text-decoration:none;color:grey;"><li>Contact</li></a>
+</ul>
+</div>
+<div class="col-sm-3 mt-5">
+<h4 class="mb-4">Keep Connect</h4>
+<h6>
+<a href="tel:+91 8573000905" style="text-decoration:none;color:gray;">
+<i class="fa-solid fa-phone" aria-hidden="true"></i>
++91 8573000905
+</a>
+</h6>
+<h6>
+<a href="mailto:gm@hotelregencyvns.com" style="text-decoration:none;color:gray;">
+<i class="fa-solid fa-envelope"></i>&ensp;
+ gm@hotelregencyvns.com
+</a>
+</h6>
+<h6 style="color:gray;text-align:justify;" class="mt-2">
+<i class="fa-solid fa-location" aria-hidden="true"></i>
+Maruti Crossing, Andhrapul, G.T Road , Varanasi 221002
+</h6>
+</div>
+<div class="col-sm-3 mt-3">
+<img src="Images/Footer1.png" style="width:100%;"/>
+</div> 
+</div>
+<hr style="border:1px solid white;">
+<div class="row">
+<div class="col-sm-12">
+<h6 style="color:white;margin-left:50px;">Copyright © 2024 All rights reserved | Developed by <a href='https://www.techomind.com/' style="text-decoration:none;color:white;" target='_blank'>Techomind</a></h6>
+</div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script src="HotelScript.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+	</body>
+</html>

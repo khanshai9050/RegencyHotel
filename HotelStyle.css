@@ -1,0 +1,265 @@
+			*
+		{
+		font-family:  Helvetica;
+		}
+  @media screen and (max-width:990px){
+		.MenubarSpaceDiv{
+		display:none;
+		}
+		}
+		.ServiceCard img
+		{
+		 height:50px;
+		 width:50px;
+		}
+		.ServiceCardBox:hover
+		{
+		color:red;
+		cursor:pointer;
+		}
+		/*css for navbar hover*/
+		 .NavbarMenu .nav-link
+		 {
+		font-size:20px;	
+		font-family:cursive;
+		 }
+        .NavbarMenu:hover .nav-link {
+    color: #FF1105 !important;
+            }
+			/**css for testimonial*/
+				.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1) !important; /* Inverts the color to make it appear red */
+}
+
+/*css for selected menu highlight*/
+.SelectedMenu .nav-link
+{
+	color:#FF1105 !important;
+}
+ /***css for scroll to top**/
+ 
+  #myScrollToTopBtn {
+  display: none;  /*Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #000064; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  border-radius:50%;
+}
+
+#myScrollToTopBtn:hover {
+  background-color: #FF1105; /* Add a dark-grey background on hover */
+}
+
+  /**css for booking button fixed**/
+  
+  #BOOKINGBTN
+  {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 50%; /* Place the button at the bottom of the page */
+  right: -33px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  transform: rotate(90deg);
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:  #000064;/* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */  
+  }
+  
+    #BOOKINGBTN:hover
+	{
+		 background-color:   #FF1105;
+	}
+	
+	/*css for icons button*/
+	
+	#ICONBTN
+  {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 50%; /* Place the button at the bottom of the page */
+  left: -40px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  transform: rotate(90deg);
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:  #000064;/* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 8px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */  
+  }
+  
+  /*css for about page*/
+  
+  /**CSS FOR ABOUT US PAGE**/
+
+		.AboutBackgroundImage1
+		{
+		 background-image: url('Images/HotelRoomUpper1.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+position:relative;
+background-attachment:fixed;
+height:50%;
+width:100%;
+		}
+		 .Overlay1{
+width: 100%;
+height: 100%;
+position:absolute;
+color: white;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+text-align: center;
+font-size: 25px;
+background-color:#0009;
+  }
+
+@media(max-width:557.98px)
+{
+.AboutBackgroundImage1{
+height:30%!important;
+}	
+}
+
+  .AboutBackgroundImage2
+		{
+		 background-image: url('Images/HotelAbout1.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+position:relative;
+height:70%;
+width:100%;
+		}
+		 .Overlay2{
+width: 100%;
+height: 100%;
+position:absolute;
+color: white;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+text-align: center;
+font-size: 25px;
+background-color:#0009;
+
+  }
+  
+  /*css for Room Show*/
+  
+  .RoomHover
+  {
+	  font-size:20px;
+  }
+  
+    .RoomHover:hover
+  {
+	  color:red;
+  }
+  
+   /**CSS FOR Restaurent PAGE**/
+
+		.FoodBackgroundImage1
+		{
+		 background-image: url('Images/Food.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+position:relative;
+height:50%;
+width:100%;
+		}
+		 .FoodOverlay1{
+width: 100%;
+height: 100%;
+position:absolute;
+color: white;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+text-align: center;
+font-size: 25px;
+background-color:#0009;
+  }
+  
+  /*css for red to blue button*/
+  
+  .BookRedBtn
+  {
+	 background-color:#FF1105;
+color:white;	 
+  }
+  .BookRedBtn:hover
+  {
+	background-color:#000064;
+	color:white;  
+  }
+  
+  /*css for blue to red button*/
+    
+	.BlueToRed
+	{
+	background-color:#000064;
+	color:white;
+	padding:10px;	
+	}
+  .BlueToRed:hover
+  {
+	  background-color:#FF1105;
+  }
+  /*css for service div*/
+  .ServiceIcons:hover
+  { 
+color:#FF1105;	
+  }
+  
+  /*css for hall image in index page*/
+   
+    @media screen and (max-width:1200px){
+		.HallImageDiv{
+		display:none;
+		}
+		}
+		
+		/*css for footer up image*/
+		
+		.FooterBackgroundImage1
+		{
+		 background-image: url('Images/Footerimg.png');
+
+background-attachment: fixed;
+position:relative;
+height:40%;
+width:100%;
+		}
+		 .FooterOverlay1{
+width: 100%;
+height: 100%;
+position:absolute;
+color: white;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+text-align: center;
+font-size: 25px;
+background-color:#0009;
+
+  }
+  
