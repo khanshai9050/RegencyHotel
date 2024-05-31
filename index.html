@@ -1,0 +1,747 @@
+<html>
+<head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+		 <link href="HotelStyle.css" rel="stylesheet"/>
+		<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+        <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=desktop-width, initial-scale=1">
+</head>
+<body>
+<!--div for top to up button-->
+<button onclick="topFunction()" id="myScrollToTopBtn" title="Go to top"><i class="fa-solid fa-arrows-up-to-line"></i></button>
+<!--Booking button-->
+<a href="https://www.google.com.np/travel/hotels/entity/CgoIgvOTy7HG2JBkEAE/prices?g2lb=4207876%2C4208993%2C4220293%2C4223281%2C4242898%2C4245928%2C4251619%2C4253230%2C4254308%2C4256748%2C4258168%2C4250437%2C4251518%2C4253015&hl=en&gl=np&un=1&rp=MhsKEgml8-FZgqw7QBHB4nDmV1tVQBC245qvrC04AUgC&ictx=1&tcfs=EhoaGAoKMjAxOS0wNS0yMRIKMjAxOS0wNS0yMlIA&utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAEaUwo1EjEyJTB4M2EyY2Q0Y2JhYzNkMjRkZjoweDg3ZmFhZjY2NTM1ZmM5ODU6CFZpZGFyYmhhGgASGhIUCgcI6A8QBRgFEgcI6A8QBRgGGAEyAhAAKgkKBToDTlBSGgA&sa=X&ap=MAA&ei=xRt4YtCbE6rflsYPmtS1iAo" target='_blank'>
+<div id="BOOKINGBTN">BOOK NOW</div>
+</a>
+<!--Icon button-->
+<div id="ICONBTN">
+<a href="https://www.facebook.com/hotelregencyvaranasi/" target='_blank'><i STYLE="transform: rotate(270deg);color:white;" class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+<a href="https://www.youtube.com/@HotelRegency" target='_blank'><i STYLE="transform: rotate(270deg);color:white;" class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+<a href="https://www.hotelregencyvns.com/" target='_blank'><i STYLE="transform: rotate(270deg);color:white;" class="fa-brands fa-google" aria-hidden="true"></i></a>
+<a href="mailto:gm@hotelregencyvns.com" target='_blank'><i STYLE="transform: rotate(270deg);color:white;" class="fa-solid fa-envelope"></i></a>
+<a href="tel:+91 8573000905" target='_blank'><i STYLE="transform: rotate(270deg);color:white;" class="fa-solid fa-phone" aria-hidden="true"></i></a> 
+</div>
+	
+	<!--div for upper header-->
+	<div class='container-fluid'>
+		<div class='row' style='background:#000064;height:30px;'>
+			<div class='col-sm-12'></div>
+			</div>
+		</div>
+<!--div for menubar-->
+<div class="container-fluid sticky-top" style="background-color:white;box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;">
+<div class="row">
+<div class="col-sm-1"></div>
+<div class="col-sm-11 p-0">
+	<nav class="navbar navbar-expand-lg navbar-light">
+						<div class="container-fluid">
+						 
+                         <img src="Images/logo.png"/>
+							<button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon text-light"></span>
+							</button>
+							<DIV CLASS="COL-SM-2 MenubarSpaceDiv"></DIV>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav">
+		<li class="nav-item NavbarMenu SelectedMenu">
+		<a class="nav-link active" aria-current="page" href="index.html"
+                                       >Home&ensp;</a>
+									</li>
+									<li class="nav-item NavbarMenu">
+										<a class="nav-link active" href="About.html">About&ensp;
+										</a>
+									</li>
+									        <li class="nav-item dropdown NavbarMenu">
+          <a class="nav-link dropdown-toggle" style="Color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Rooms
+          </a>
+                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Suite.html">Suite Room</a></li>
+			<li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Executive.html">Executive Room</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Superior.html">Superior Room</a></li>
+          </ul>
+        </li> 
+							        <li class="nav-item dropdown NavbarMenu">
+          <a class="nav-link dropdown-toggle" style="Color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Regency Hall
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Peacock.html">Peacock Hall</a></li>
+			<li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Robin.html">Robin Hall</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Board.html">Board Room 15</a></li>
+          </ul>
+        </li> 
+									<li class="nav-item NavbarMenu">
+										<a class="nav-link active" href="Food.html" style="border:none;">Restaurant&ensp;</a>
+									</li>
+									<li class="nav-item NavbarMenu">
+										<a class="nav-link active" href="Event.html" style="border:none;">Events&ensp;</a>
+									</li>
+									<li class="nav-item NavbarMenu">
+										<a class="nav-link active" href="Contact.html" style="border:none;">Contact</a>
+									</li>
+          </ul>
+							</div>
+						</div>
+					</nav>
+</div>
+</div>
+</div>
+
+<!-- Carousel wrapper -->
+<div
+  id="carouselBasicExample"
+  data-mdb-carousel-init class="carousel slide carousel-fade"
+  data-mdb-ride="carousel"
+>
+
+  <!-- Inner -->
+  <div class="carousel-inner">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <img
+        src="Images/HotelSlider1.jpg"
+        class="d-block w-100"
+        alt="Sunset Over the City"
+      />
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img
+        src="Images/HotelSlider2.jpg"
+        class="d-block w-100"
+        alt="Canyon at Nigh"
+      />
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img
+        src="Images/HotelSlider3.jpg"
+        class="d-block w-100"
+        alt="Cliff Above a Stormy Sea"
+      />
+    </div>
+	
+	   <!-- Single item -->
+    <div class="carousel-item">
+      <img
+        src="Images/HotelSlider4.jpg"
+        class="d-block w-100"
+        alt="Cliff Above a Stormy Sea"
+      />
+    </div>
+	   <!-- Single item -->
+    <div class="carousel-item">
+      <img
+        src="Images/HotelSlider5.jpg"
+        class="d-block w-100"
+        alt="Cliff Above a Stormy Sea"
+      />
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-mdb-target="#carouselBasicExample"
+    data-mdb-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-mdb-target="#carouselBasicExample"
+    data-mdb-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container">
+<div class="row mt-5">
+<div class="col-sm-6 mt-5" data-aos="zoom-in-right" data-aos-duration="2500">
+<img src="Images/HotelOuter2.png" style="width:100%;"/>
+</div>
+<div class="col-sm-1"></div>
+<div class="col-sm-5 mt-5">
+	<h5 style="color:#FF1105;" data-aos="zoom-in-down" data-aos-duration="2500">ABOUT US</h5>
+	
+<h1 style="color:#000064;font-family:poppins;" data-aos="zoom-in-down" data-aos-duration="2500">Welcome To
+Hotel Regency</h1>
+<h5 class="mb-4" style="line-height:27px;text-align:justify;margin-top:20px;word-spacing:3px;" data-aos="zoom-in-up" data-aos-duration="2500">Our 3 STAR Luxury hotel is located in the very heart of the City Varanasi. It is in close proximity to all the places of tourist interests, religious spots and shopping malls. Recline and erase all fatigue in
+air-conditioned comfort. Hotel Regency is the best budget hotel in Varanasi in the heart of the city, hotel features spacious 40 Rooms for luxurious accommodation offering complimentary Breakfasts, Wi-Fi Connectivity, Restaurant, Conference Rooms, Banquet halls, all under one roof.
+</h5>
+<h6 class="mb-3">General Manager:<span style="color:#FF1105;font-weight:bold;"> Ram Pandey</span></h6>
+<img src="Images/qualification.png"style="height:70px;width:60px;"/>
+<img src="Images/guaranteed.png"style="height:60px;width:60px;"/>
+<img src="Images/trophy.png"style="height:60px;width:60px;"/>
+</div>
+
+</div>
+</div>
+
+<!--div for services-->
+<div class="container">
+<h2 style="color:#000064;font-family:poppins;text-align:center;margin-top:70px;" data-aos="zoom-in-down" data-aos-duration="2500">
+Hotel Regency Services</h2>
+<div class="row mt-5">
+<div class="col-sm-3">
+<div class="card ServiceIcons" style="width: 100%">
+  <div class="card-body text-center">
+  <img src="Images/parking.png" style="height:50px;width:50px;" class="card-img-top" alt="...">
+    <h5 class="card-title mt-3">Parking Facility</h5>
+  </div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="card ServiceIcons" style="width: 100%">
+  <div class="card-body text-center">
+  <img src="Images/service.png" style="height:50px;width:50px;" class="card-img-top" alt="...">
+    <h5 class="card-title mt-3">24*7 Service</h5>
+  </div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="card ServiceIcons" style="width: 100%">
+  <div class="card-body text-center">
+  <img src="Images/hotelfood.png" style="height:50px;width:50px;" class="card-img-top" alt="...">
+    <h5 class="card-title mt-3">Restaurant</h5>
+  </div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="card ServiceIcons" style="width: 100%">
+  <div class="card-body text-center">
+  <img src="Images/massage.png" style="height:50px;width:50px;" class="card-img-top" alt="...">
+    <h5 class="card-title mt-3">Spa Service</h5>
+  </div>
+</div>
+</div>
+</div>
+<!--div for second service-->
+<div class="row mt-3">
+<div class="col-sm-3">
+<div class="card ServiceIcons" style="width: 100%">
+  <div class="card-body text-center">
+  <img src="Images/wall-clock.png" style="height:50px;width:50px;" class="card-img-top" alt="...">
+    <h5 class="card-title mt-3">In 1p.m | Out 11a.m</h5>
+  </div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="card ServiceIcons" style="width: 100%">
+  <div class="card-body text-center">
+  <img src="Images/sedan.png" style="height:50px;width:50px;" class="card-img-top" alt="...">
+    <h5 class="card-title mt-3">Transportation</h5>
+  </div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="card ServiceIcons" style="width: 100%">
+  <div class="card-body text-center">
+  <img src="Images/food-safety.png" style="height:50px;width:50px;" class="card-img-top" alt="...">
+    <h5 class="card-title mt-3">Fresh Food</h5>
+  </div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="card ServiceIcons" style="width: 100%">
+  <div class="card-body text-center">
+  <img src="Images/wi-fi.png" style="height:50px;width:50px;" class="card-img-top" alt="...">
+    <h5 class="card-title mt-3">Free Wifi</h5>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!--row for rooms intro-->
+<section class="pt-5 mt-5 pb-5">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <div class="card" style="border:none;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                                        <div class="card-body">
+                                            <div class="row">
+                                        <div class="col-sm-12">
+										  <div class="row">
+										  <div class="col-sm-6">
+										  <img src="Images/HotelRoom3.jpg" style="width:100%;"/>
+										  </div>
+										  <div class="col-sm-6">
+										          <h2 class="mt-2" style="font-weight:bold;font-family:poppins;">Superior Room</h2>
+                         <h4 style="color:#000064;">Check Offer</h4>
+						<table class="table mt-4">
+						<tr>
+						<td> <span style="color:#FF1105;">&check;</span> Size</td>
+						<td>: 180 sft</td>
+						</tr>
+							<tr>
+						<td> <span style="color:#FF1105;">&check;</span> Capacity</td>
+						<td>: Max person 3</td>
+						</tr>
+							<tr>
+						<td> <span style="color:#FF1105;">&check;</span> Bed</td>
+						<td>: King Size & Twin Beds</td>
+						</tr>
+							<tr>
+						<td> <span style="color:#FF1105;">&check;</span> Services</td>
+						<td>: Wifi, Television, Bathroom</td>
+						</tr>
+						</table>
+				<center><a href="Superior.html"><div class="btn mt-4 BookRedBtn">Explore More</div></a></center>
+                   
+                   
+										  </div>
+										  </div>
+										</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                                                       <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <div class="card" style="border:none;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                                        <div class="card-body">
+                                            <div class="row">
+                                        <div class="col-sm-12">
+										  <div class="row">
+										  <div class="col-sm-6">
+										  <img src="Images/HotelRoom2.jpg" style="width:100%;"/>
+										  </div>
+										  <div class="col-sm-6">
+										          <h2 class="mt-2" style="font-weight:bold;font-family:poppins;">Suite Room</h2>
+                       <h4 style="color:#000064;">Check Offer</h4>
+						<table class="table mt-4">
+						<tr>
+						<td> <span style="color:#FF1105;">&check;</span> Size</td>
+						<td>: 340 sft</td>
+						</tr>
+							<tr>
+						<td> <span style="color:#FF1105;">&check;</span> Capacity</td>
+						<td>: Max person 3</td>
+						</tr>
+							<tr>
+						<td> <span style="color:#FF1105;">&check;</span> Bed</td>
+						<td>: King Size Beds</td>
+						</tr>
+							<tr>
+						<td> <span style="color:#FF1105;">&check;</span> Services</td>
+						<td>: Wifi, Television, Bathroom</td>
+						</tr>
+						</table>
+				<center><a href="Suite.html"><div class="btn mt-4 BookRedBtn">Explore More</div></a></center>
+                   
+										  </div>
+										  </div>
+										</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                                                    <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <div class="card" style="border:none;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                                        <div class="card-body">
+                                            <div class="row">
+                                        <div class="col-sm-12">
+										  <div class="row">
+										  <div class="col-sm-6">
+										  <img src="Images/HotelRoom1.jpg" style="width:100%;"/>
+										  </div>
+										  <div class="col-sm-6">
+										          <h2 class="mt-2" style="font-weight:bold;font-family:poppins;">Executive Room</h2>
+                        <h4 style="color:#000064;">Check Offer</h4>
+						<table class="table mt-4">
+						<tr>
+						<td> <span style="color:#FF1105;">&check;</span> Size</td>
+						<td>: 220 sft</td>
+						</tr>
+							<tr>
+						<td> <span style="color:#FF1105;">&check;</span> Capacity</td>
+						<td>: Max person 3</td>
+						</tr>
+							<tr>
+						<td> <span style="color:#FF1105;">&check;</span> Bed</td>
+						<td>: King Size & Twin Beds</td>
+						</tr>
+							<tr>
+						<td> <span style="color:#FF1105;">&check;</span> Services</td>
+						<td>: Wifi, Television, Bathroom</td>
+						</tr>
+						</table>
+				<center><a href="Executive.html"><div class="btn mt-4 BookRedBtn">Explore More</div></a></center>
+                   
+                   
+										  </div>
+										  </div>
+										</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		
+            </div>
+			<div class="row">
+            <div class="col-12" style="text-align:center;">
+                <a class="mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <div class="btn btn" style="background-color:#000064;color:white;padding:10px;">Previous</div>
+                </a>
+                <a class="mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                  <div class="btn btn" style="background-color:#000064;color:white;padding:10px;">Next</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--div for hall intro-->
+<div class="container">
+<div class="row mt-5 text-center">
+<h1 style="font-family:poppins;" data-aos="zoom-in-down" data-aos-duration="2500">Meetings & Events</h1>
+
+<h6 style="color:#FF1105;" data-aos="zoom-in-down" data-aos-duration="2500">OUR HOTEL FEATURES THREE CATEGORY MEETING HALLS.</h6>
+</div>
+<div class="row mt-5">
+<div class="col-sm-6">
+<!--Carousel For hall-->
+<div id="carouselExampleControls" data-aos="zoom-in-right" data-aos-duration="2500" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Images/HotelHall1.jpg" class="d-block w-100" alt="...">
+	  <h3 style="color:#000064;margin-top:20px;">Peacock Hall Seating Arrangement</h3>
+    </div>
+    <div class="carousel-item">
+      <img src="Images/HotelHall2.jpg" class="d-block w-100" alt="...">
+	  <h3 style="color:#000064;margin-top:20px;">Robin Hall Seating Arrangement</h3>
+    </div>
+    <div class="carousel-item">
+      <img src="Images/HotelHall3.jpg" class="d-block w-100" alt="...">
+	  <h3 style="color:#000064;margin-top:20px;">Board Room 15 U Seating Arrangement</h3>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<div class="col-sm-6" data-aos="zoom-in-left" data-aos-duration="2500" style="border-left:1px solid grey;">
+<div class="row">
+<div class="col-sm-4 HallImageDiv">
+<img src="Images/HotelHall11.jpg"/>
+</div>
+<div class="col-sm-8">
+<h5>Peacock Hall Seating Arrangement</h5>
+<span style="color:#FF1105;">FOR UPTO: 300 (PERSON)</span>
+<h6>Peacock Banquet at Hotel Regency Varanasi providing the best of hospitality, traditions & converge <a style="color:#FF1105;text-decoration:none;font-size:20px;" href="Peacock.html">&rarr;</a></h6>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-sm-4 HallImageDiv">
+<img src="Images/HotelHall21.jpg"/>
+</div>
+<div class="col-sm-8">
+<h5>Robin Hall Seating Arrangement</h5>
+<span style="color:#FF1105;">FOR UPTO: 60 (PERSON)</span>
+<h6>Robin Hall theatre style banquet providing the best of hospitality, traditions & converge <a style="color:#FF1105;text-decoration:none;font-size:20px;" href="Robin.html">&rarr;</a></h6></div>
+</div>
+<hr>
+<div class="row">
+<div class="col-sm-4 HallImageDiv">
+<img src="Images/HotelHall31.jpg"/>
+</div>
+<div class="col-sm-8">
+<h5>Board Room 15 U Seating Arrangement</h5>
+<span style="color:#FF1105;">FOR UPTO: 60 (PERSON)</span>
+<h6>Robin Hall theatre style banquet providing the best of hospitality, traditions & converge <a style="color:#FF1105;text-decoration:none;font-size:20px;" href="Robin.html">&rarr;</a></h6></div>
+</div>
+</div>
+</div>
+</div>
+<!--div for work counter-->
+<div class="container-fluid">
+    <div class="row mt-5">
+	<div class="col-sm-1"></div>
+        <div class="col-sm-5 pt-5 ELoanImg3">
+            <img src="Images/HotelCartoon.jpg" style="height:400px;width:100%;" />
+        </div>
+        
+        <div class="col-sm-6 p-5">
+
+            <h1 style="font-size: 3VW;font-weight:bold;">
+                Our 20 Years of Work Experience
+            </h1>
+            <br />
+            <div class="row">
+                <div class="col-sm-4">
+                    <h1 style="color:#000064;"> <span id="number1"> 1200</span><span>+</span></h1>
+                    <h6 style="color:lightslategray;">Google Reviews</h6>
+                </div>
+                <div class="col-sm-4">
+                    <h1 style="color:#000064;"> <span id="number2">20</span><span>+</span> </h1>
+                    <h6 style="color:lightslategray;">Years of Work Experience</h6>
+                </div>
+                <div class="col-sm-4">
+                    <h1 style="color:#000064;"><span id="number3">40</span><span>+</span></h1>
+                    <h6 style="color:lightslategray;">Rooms</h6>
+
+                </div>
+            </div>
+            <br />
+            <a href="Suite.html"> <div class="btn EBtn btn-primary btn-lg mb-5 mt-3" style="border-radius:30px;background-color:#000064;">Explore Rooms</div> </a>
+        </div>
+    </div>
+</div>
+<!--div for testimonial-->
+<div class="container">
+<div class="row mt-5">
+<div class="col-sm-12 mt-5 text-center">
+<h1 style="font-family:poppins;" data-aos="zoom-in-down" data-aos-duration="2500">Testimonials</h1>
+<h6 style="color:#FF1105;" data-aos="zoom-in-down" data-aos-duration="2500">Valuable Reviews Of Our Customers</h6>
+<hr>
+</div>
+</div>
+</div>
+<div id="carouselExampleControls1" class="carousel slide" style="margin-top:60px;" data-bs-ride="carousel">
+  <div class="carousel-inner container">
+    <div class="carousel-item active">
+	<div class="row">
+	<div class="col-sm-1"></div>
+	<div class="col-sm-3">
+	 <img src="Images/testimonial4.jpg" class="d-block w-100" alt="..." style="border-radius:50%;border:1px solid grey;">
+	</div>
+	<div class="col-sm-7">
+	<h3 style="color:#000064;margin-top:20px;">Rajeev Sharma</h3>
+	<h6 style="color:#FF1105;">Movie Actor & Producer</h6>
+	<h5 class="mt-2 mb-2" style="color:grey;word-spacing:3px;">" Really pleasant and clean rooms, but the thing that makes this such a good place to stay are the 
+	staff. All of the people are incredibly helpful and generous with their time and advice. "</h5>
+	                                                <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star" style="color: orange;"></i>
+	</div>
+	<div class="col-sm-1"></div>
+	</div>
+     
+	  
+    </div>
+    <div class="carousel-item">
+    	<div class="row">
+		<div class="col-sm-1"></div>
+	<div class="col-sm-3">
+	 <img src="Images/testimonial3.jpg" class="d-block w-100" alt="..." style="border-radius:50%;border:1px solid grey;">
+	</div>
+	<div class="col-sm-7">
+	<h3 style="color:#000064;margin-top:20px;">Shashank Dubey</h3>
+	<h6 style="color:#FF1105;">CEO Techomind An IT Company</h6>
+	<H5 class="mt-2 mb-2" style="color:grey;word-spacing:3px;">" Gorgeous building and it only gets more with breathtaking when you walk in. High quality rooms and high quality 
+	services. "</H5>
+		                                                <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star" style="color: orange;"></i>
+	</div>
+	<div class="col-sm-1"></div>
+	</div>
+    </div>
+    <div class="carousel-item">
+      	<div class="row">
+		<div class="col-sm-1"></div>
+	<div class="col-sm-3">
+	 <img src="Images/testimonial2.jpg" class="d-block w-100" alt="..." style="border-radius:50%;border:1px solid grey;">
+	</div>
+	<div class="col-sm-7">
+	<h3 style="color:#000064;margin-top:20px;">Jeevan Pandey</h3>
+		<h6 style="color:#FF1105;">Director SRVC Supply Chains Pvt Ltd</h6>
+	<h5 class="mt-2 mb-2" style="color:grey;word-spacing:3px;">Great location, we really loved the banquet hall of the hotel the food was fantastic and staff was extremely friendly and helpful the over all arrangement was done beautifully."</h6>
+		                                                <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star" style="color: orange;"></i>
+	</div>
+	<div class="col-sm-1"></div>
+	</div>
+    </div>
+	 <div class="carousel-item">
+    	<div class="row">
+		<div class="col-sm-1"></div>
+	<div class="col-sm-3">
+	 <img src="Images/testimonial1.jpg" class="d-block w-100" alt="..." style="border-radius:50%;border:1px solid grey;">
+	</div>
+	<div class="col-sm-7">
+	<h3 style="color:#000064;margin-top:20px;">Sahil Khan</h3>
+	<h6 style="color:#FF1105;">Indian Actor & Fitness Enterpreneur</h6>
+	<H5 class="mt-2 mb-2" style="color:grey;word-spacing:3px;">" I had a wonderful experience at Hotel Residency.  Every staff member I encountered from the valet to the check in to the clean staff where delightful and eager to help! 
+	Thank You!  will recommended to my colleagues! "</H5>
+		                                                <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star checked" style="color: orange;"></i>
+                                                    <i class="fa fa-star" style="color: orange;"></i>
+	</div>
+	<div class="col-sm-1"></div>
+	</div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" style="color:red;" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--div for book now-->
+<div class="container mt-5 mb-5 FooterBackgroundImage1">
+<div class="row">
+<div class="col-sm-12 FooterOverlay1">
+<h5 style="color:white;">One of the best Hotel in Varanasi</h5>
+<h1>Start Booking Regency Today</h1>
+<a style="text-decoration:none;" href="https://www.google.com.np/travel/hotels/entity/CgoIgvOTy7HG2JBkEAE/prices?g2lb=4207876%2C4208993%2C4220293%2C4223281%2C4242898%2C4245928%2C4251619%2C4253230%2C4254308%2C4256748%2C4258168%2C4250437%2C4251518%2C4253015&hl=en&gl=np&un=1&rp=MhsKEgml8-FZgqw7QBHB4nDmV1tVQBC245qvrC04AUgC&ictx=1&tcfs=EhoaGAoKMjAxOS0wNS0yMRIKMjAxOS0wNS0yMlIA&utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAEaUwo1EjEyJTB4M2EyY2Q0Y2JhYzNkMjRkZjoweDg3ZmFhZjY2NTM1ZmM5ODU6CFZpZGFyYmhhGgASGhIUCgcI6A8QBRgFEgcI6A8QBRgGGAEyAhAAKgkKBToDTlBSGgA&sa=X&ap=MAA&ei=xRt4YtCbE6rflsYPmtS1iAo" target='_blank'>
+<div class="btn btn mt-3 BookRedBtn">BOOK NOW</div>
+</a></div>
+</div>
+</div>
+<!--div for footer-->
+<div class="container-fluid" style="background-color:black;color:white;">
+<!---div for first row of footer-->
+<div class="row">
+<div class="col-sm-4">
+<div class="row">
+<div class="col-sm-1"></div>
+<div class="col-sm-11">
+<IMG class="mt-5 mb-2" SRC="Images/logo.png"/>
+<h6>Book our Banquets for all types of Functions like Birthday, Marriage, Anniversary, Party, Events, Meetings all type of programs.
+We offers 2 types of halls, Small Hall for 150 people & Second Hall for 1000+ people.</h6>
+</div>
+</div>
+</div>
+<div class="col-sm-2 mt-5">
+<h4 class="ms-3 mb-4">Navigation</h4>
+<ul style="list-style-type:disc;">
+<a href="index.html" style="text-decoration:none;color:grey;"><li>Home</li></a>
+<a href="About.html" style="text-decoration:none;color:grey;"><li>About</li></a>
+<a href="Suite.html" style="text-decoration:none;color:grey;"><li>Rooms</li></a>
+<a href="Food.html" style="text-decoration:none;color:grey;"><li>Restaurant</li></a>
+<a href="Event.html" style="text-decoration:none;color:grey;"><li>Events</li></a>
+<a href="Contact.html" style="text-decoration:none;color:grey;"><li>Contact</li></a>
+</ul>
+</div>
+<div class="col-sm-3 mt-5">
+<h4 class="mb-4">Keep Connect</h4>
+<h6>
+<a href="tel:+91 8573000905" style="text-decoration:none;color:gray;">
+<i class="fa-solid fa-phone" aria-hidden="true"></i>
++91 8573000905
+</a>
+</h6>
+<h6>
+<a href="mailto:gm@hotelregencyvns.com" style="text-decoration:none;color:gray;">
+<i class="fa-solid fa-envelope"></i>&ensp;
+ gm@hotelregencyvns.com
+</a>
+</h6>
+<h6 style="color:gray;text-align:justify;" class="mt-2">
+<i class="fa-solid fa-location" aria-hidden="true"></i>
+Maruti Crossing, Andhrapul, G.T Road , Varanasi 221002
+</h6>
+</div>
+<div class="col-sm-3 mt-3">
+<img src="Images/Footer1.png" style="width:100%;"/>
+</div> 
+</div>
+<hr style="border:1px solid white;">
+<div class="row">
+<div class="col-sm-12">
+<h6 style="color:white;margin-left:50px;">Copyright © 2024 All rights reserved | Developed by <a href='https://www.techomind.com/' style="text-decoration:none;color:white;" target='_blank'>Techomind</a></h6>
+</div>
+</div>
+</div>
+<!-- Carousel wrapper -->
+ <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <script src="HotelScript.js"></script>
+	<script>
+  AOS.init();
+</script>
+<script>
+    $(document).scroll(function () {
+        $.fn.jQuerySimpleCounter = function (options) {
+            var settings = $.extend({
+                start: 0,
+                end: 100,
+                easing: 'swing',
+                duration: 400,
+                complete: ''
+            }, options);
+
+            var thisElement = $(this);
+
+            $({ count: settings.start }).animate({ count: settings.end }, {
+                duration: settings.duration,
+                easing: settings.easing,
+                step: function () {
+                    var mathCount = Math.ceil(this.count);
+                    thisElement.text(mathCount);
+                },
+                complete: settings.complete
+            });
+        };
+        $('#number1').jQuerySimpleCounter({ end: 1200, duration: 3000 });
+        $('#number2').jQuerySimpleCounter({ end: 20, duration: 3000 });
+        $('#number3').jQuerySimpleCounter({ end: 40, duration: 2000 });
+    });
+	</script>
+</body>
+</html>
